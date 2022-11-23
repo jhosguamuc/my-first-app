@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="this.Items.push(this.Items.length + 1)" >Details</button>
+
+<p *ngFor="let item of Items" 
+[ngClass]="{'text-color': item > 5}"
+[ngStyle]="{backgroundColor: item > 5 ? 'blue': null}"
+>assignment-three here!</p>
