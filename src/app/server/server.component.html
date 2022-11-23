@@ -1,1 +1,4 @@
-<p>metodo:{{metodoRetornastring()}}, ID:{{ID}} y estado:{{Estatus}}</p>
+<p 
+[ngStyle]="{backgroundColor:getColor()}"
+[ngClass]="{online: Estatus === 'Activo'}"
+>metodo:{{metodoRetornastring()}}, ID:{{ID}} y estado:{{Estatus}}</p>

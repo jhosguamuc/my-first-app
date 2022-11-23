@@ -7,6 +7,12 @@
  (click)="onCreateServer()"
   class="btn btn-primary"
    [disabled]="!allowNewServer">Add server</button>
-<p>{{ServerCreationStatus}}</p>
-<app-server></app-server>
-<app-server></app-server>
+<!-- <p>{{ServerCreationStatus}}</p> -->
+
+<p *ngIf="ServerCreated; else noexist">Server was created! server name is {{ServerName}}</p>
+<ng-template #noexist>
+   <p>
+      No was created!!!
+   </p>
+</ng-template>
+<app-server *ngFor="let server of Servers"></app-server>
