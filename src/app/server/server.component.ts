@@ -9,4 +9,12 @@ import { Component } from "@angular/core";
 
 export class ServerComponent{
 
+ID: number = 10;
+Estatus: string = "Inactivo"
+
+metodoRetornastring()
+{
+    return "Estado del servidor:"+ this.Estatus;
+}
+
 }
